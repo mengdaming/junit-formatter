@@ -6,7 +6,9 @@ on:
       - master
   push:
     branches:
-      - master
+      - '**'
+  workflow_dispatch:
+    inputs:
 
 jobs:
   mix_test:
